@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        text {
+            font-family: cursive;
+            color: azure;
+        }
+
+        svg {
+            background: url(bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body style="margin:0;padding:0;">
+    <svg width="100vw" height="100vh" id="solarSystem">
+        <!-- images of plants -->
+        <defs>
+            <pattern id="image1" x="30" y="5" patternUnits="userSpaceOnUse" height="50" width="50">
+                <image x="0" y="0" xlink:href="b1.png"></image>
+            </pattern>
+            <pattern id="image2" x="25" y="0" patternUnits="userSpaceOnUse" height="50" width="50">
+                <image x="0" y="0" xlink:href="b4.png"></image>
+            </pattern>
+            <pattern id="image3" x="20" y="0" patternUnits="userSpaceOnUse" height="50" width="50">
+                <image x="0" y="0" xlink:href="b3.png"></image>
+            </pattern>
+            <pattern id="image4" x="20" y="0" patternUnits="userSpaceOnUse" height="50" width="50">
+                <image x="0" y="0" xlink:href="b2.png"></image>
+            </pattern>
+            <pattern id="image5" x="45" y="5" patternUnits="userSpaceOnUse" height="71" width="71">
+                <image x="0" y="0" xlink:href="b5.png"></image>
+            </pattern>
+            <pattern id="image6" x="30" y="0" patternUnits="userSpaceOnUse" height="50" width="50">
+                <image x="0" y="0" xlink:href="b6.png"></image>
+            </pattern>
+            <pattern id="image7" x="20" y="0" patternUnits="userSpaceOnUse" height="50" width="50">
+                <image x="0" y="0" xlink:href="b7.png"></image>
+            </pattern>
+            <pattern id="image8" x="20" y="0" patternUnits="userSpaceOnUse" height="50" width="50">
+                <image x="0" y="0" xlink:href="b8.png"></image>
+            </pattern>
+
+            <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                   
+                    <stop offset="0%" style="stop-color:rgb(252, 248, 17);" />
+                    <stop offset="100%" style="stop-color:rgb(252, 153, 5)"/>
+                  </radialGradient>
+        </defs>
+        <!-- orabts of plants -->
+        <circle cx="650" cy="325" stroke="gray" r="140" fill="transparent"></circle>
+        <circle cx="650" cy="325" stroke="gray" r="210" fill="transparent"></circle>
+        <circle cx="650" cy="325" stroke="gray" r="280" fill="transparent"></circle>
+        <circle cx="650" cy="325" stroke="gray" r="350" fill="transparent"></circle>
+        <circle cx="650" cy="325" stroke="gray" r="420" fill="transparent"></circle>
+        <circle cx="650" cy="325" stroke="gray" r="490" fill="transparent"></circle>
+        <circle cx="650" cy="325" stroke="gray" r="560" fill="transparent"></circle>
+        <circle cx="650" cy="325" stroke="gray" r="630" fill="transparent"></circle>
+        <!-- plants -->
+        <g>
+            <text x="650" y="295" fill="white">Mercury
+                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 0;120 0 ;" repeatCount="1" fill="freeze"
+                    begin="0.1s" />
+            </text>
+            <circle id="p1" cx="650" cy="325" r="20" fill="url(#image1)">
+                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 0;140 0 ;" repeatCount="1" fill="freeze"
+                    begin="0.1s" />
+            </circle>
+            <animateTransform attributeName="transform" dur="15s" type="rotate" from="0 650 325 " to="360 650 325" repeatCount="indefinite"
+                begin="5s"></animateTransform>
+        </g>
+        <g>
+            <text x="650" y="295" fill="white">Venus
+                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 0;190 0 ;" repeatCount="1" fill="freeze"
+                    begin="0.1s" />
+            </text>
+            <circle cx="650" cy="325" r="25" fill="url(#image2)">
+                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 0;210 0 ;" repeatCount="1" fill="freeze"
+                    begin="0.1s" />
+            </circle>
+            <animateTransform attributeName="transform" dur="15s" type="rotate" from="0 650 325 " to="360 650 325" repeatCount="indefinite"
+                begin="6s"></animateTransform>
+        </g>
+        <g>
+            <text x="650" y="295" fill="white">Earth
+                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 0;270 0 ;" repeatCount="1" fill="freeze"
+                    begin="0.1s" />
+            </text>
+            <circle cx="650" cy="325" r="20" fill="url(#image3)">
+                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 0;280 0 ;" repeatCount="1" fill="freeze"
+                    begin="0.1s" />
+            </circle>
+            <animateTransform attributeName="transform" dur="15s" type="rotate" from="0 650 325 " to="360 650 325" repeatCount="indefinite"
+                begin="7s"></animateTransform>
+        </g>
+        <g>
+            <text x="650" y="295" fill="white">Mars
+                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 0;340 0 ;" repeatCount="1" fill="freeze"
+                    begin="0.1s" />
+            </text>
+            <circle cx="650" cy="325" r="20" fill="url(#image4)">
+                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 0;350 0 ;" repeatCount="1" fill="freeze"
+                    begin="0.1s" />
+            </circle>
+            <animateTransform attributeName="transform" dur="15s" type="rotate" from="0 650 325 " to="360 650 325" repeatCount="indefinite"
+                begin="8s"></animateTransform>
+        </g>
+        <g>
+            <text x="650" y="280" fill="white">Jupiter
+                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 0;400 0 ;" repeatCount="1" fill="freeze"
+                    begin="0.1s" />
+            </text>
+            <circle id="5" cx="650" cy="325" r="35" fill="url(#image5)">
+                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 0;420 0;" repeatCount="1" fill="freeze" begin="0.1s"
+                />
+            </circle>
+            <animateTransform attributeName="transform" dur="15s" type="rotate" from="0 650 325 " to="360 650 325" repeatCount="indefinite"
+                begin="9s"></animateTransform>
+        </g>
+        <g>
+            <text x="650" y="295" fill="white">Saturn
+                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 0;470 0 ;" repeatCount="1" fill="freeze"
+                    begin="0.1s" />
+            </text>
+            <circle cx="650" cy="325" r="25" fill="url(#image6)">
+                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 0;490 0 ;" repeatCount="1" fill="freeze"
+                    begin="0.1s" />
+            </circle>
+            <animateTransform attributeName="transform" dur="15s" type="rotate" from="0 650 325 " to="360 650 325" repeatCount="indefinite"
+                begin="10s"></animateTransform>
+        </g>
+        <g>
+            <text x="650" y="295" fill="white">Uranus
+                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 0;540 0 ;" repeatCount="1" fill="freeze"
+                    begin="0.1s" />
+            </text>
+            <circle cx="650" cy="325" r="20" fill="url(#image7)">
+                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 0;560 0 ;" repeatCount="1" fill="freeze"
+                    begin="0.1s" />
+            </circle>
+            <animateTransform attributeName="transform" dur="15s" type="rotate" from="0 650 325 " to="360 650 325" repeatCount="indefinite"
+                begin="11s"></animateTransform>
+        </g>
+        <g>
+            <text x="650" y="295" fill="white">Naptune
+                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 0;600 0 ;" repeatCount="1" fill="freeze"
+                    begin="0.1s" />
+            </text>
+            <circle cx="650" cy="325" r="20" fill="url(#image8)">
+                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 0;630 0 ;" repeatCount="1" fill="freeze"
+                    begin="0.1s" />
+            </circle>
+            <animateTransform attributeName="transform" dur="15s" type="rotate" from="0 650 325 " to="360 650 325" repeatCount="indefinite"
+                begin="12s"></animateTransform>
+        </g>
+
+        <circle cx="650" cy="325" r="70" fill="url(#grad1)"></circle>
+
+    </svg>
+    <script src="script.js"></script>
+</body>
+
+</html>

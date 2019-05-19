@@ -1,0 +1,55 @@
+/* Reset default style */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+.parent{
+    text-align: center;
+    padding-left: 1vw;
+    width: 70%;
+    margin: 0 auto;
+}
+#new{
+    display: none
+}
+h1,h2{
+    font-family: cursive;
+    font-size: 4vw;
+    padding-bottom:1vw; 
+    color: crimson;
+}
+.blue{
+    color: darkslategrey;
+}
+span{
+    color: black;
+}
+.buttons{
+text-align:center;
+}
+button{
+border:0;
+padding:1vw 2vw;
+font-size: 1vw
+}
+.list{
+    padding: 1vw;
+    margin: 0 auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid black;
+    height: 150px;
+    background-color: white;
+  /*  transition: 1s ease-in-out;*/
+}
+p{
+    font-family: cursive;
+    font-size: 10vw;
+}

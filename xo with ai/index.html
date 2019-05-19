@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>XO game</title>
+</head>
+
+<body>
+    <div class="buttons">
+                    <h1>X<span>O</span></h1>
+            <!-- <h1>X<span>O</span> <span class="blue">Game</span></h1> -->
+        <button id="new" onclick="restart()">New game</button>
+        <button id="single" class="ai" onclick="aiMode()">singler player</button>
+        <button id="two" onclick="twoPlayers()">two player</button>
+    </div>
+    <div class="parent" id="background">
+            <h2 id="winner"></h2>
+        <div class="list">
+            <div class="cell" id="0"><p></p></div>
+            <div class="cell" id="1"><p></p></div>
+            <div class="cell" id="2"><p></p></div>
+            <div class="cell" id="3"><p></p></div>
+            <div class="cell" id="4"><p></p></div>
+            <div class="cell" id="5"><p></p></div>
+            <div class="cell" id="6"><p></p></div>
+            <div class="cell" id="7"><p></p></div>
+            <div class="cell" id="8"><p></p></div>
+        </div>
+    </div>
+    <script src="script.jsx"></script>
+</body>
+
+</html>

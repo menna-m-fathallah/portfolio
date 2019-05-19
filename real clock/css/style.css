@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://res.cloudinary.com/dvwnmwk2z/image/upload/v1551254427/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    /* background:#f0eef3 */
+}
+.clock{
+    background-blend-mode: overlay;
+    border: 0.5vw solid #000;
+    width: 30vw;
+    background-image: url(https://res.cloudinary.com/dvwnmwk2z/image/upload/v1551254427/bg1.jpg),linear-gradient(to top , rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 2%;
+    /* background-color: #FAD6D6; */
+    height: 30vw;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bubbles{
+    position: absolute;
+    top:65%;
+    left:5%;
+    transform: rotate(-45deg);
+
+}
+
+.dot{
+    position: absolute;
+    top: 49%;
+    left: 49%;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background: #000;
+    z-index: 1;
+}
+.middle{
+    top:25%;
+    left: 40%;
+    position: absolute; 
+}
+.ar-sec{
+    border-radius: 20px;
+    width: 4px;
+    height: 10vw;
+    background: #000;
+    position: absolute;
+    bottom:50%;
+    left: 50%;
+    transform-origin: bottom;
+}
+.ar-min{
+    border-radius: 20px;
+    width: 6px;
+    height: 8vw;
+    background: #000;
+    position: absolute;
+    bottom:50%;
+    left: 50%;
+    transform-origin: bottom;
+}
+.ar-hr{
+    border-radius: 20px;
+    width: 6px;
+    height: 4vw;
+    background: #000;
+    position: absolute;
+    bottom:50%;
+    left: 50%;
+    transform-origin: bottom;
+}
+.dash{
+    width: 5%;
+    height: 1%;
+    position: absolute;
+    background: #000;
+    position: absolute;
+}
+.left{
+    top: 50%;
+}
+.right{
+    top:50%;
+    left: 95%;
+}
+.bottom{
+    top:97%;
+}
+.top,.bottom{
+    transform: rotate(90deg);
+    left:48%;
+}
+.top{
+    top:2%;
+}
+.flex{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes rotateArrow{
+    to{
+        transform: rotate(360deg);
+    }
+}
